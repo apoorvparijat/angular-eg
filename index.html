@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Angular Example
+    </title>
+    <style>
+        li.done {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body ng-app='angularTut'>
+
+    <h1>
+        Angular tutorails with routing
+    </h1>
+    <a href='#/'>
+        Home
+    </a>
+    <br />
+    <a ui-sref='calculator'>
+        Calculator
+    </a>
+    <br />
+    <a ui-sref='calculator.scientific'>
+        Scientific Calculator
+    </a>
+    <br />
+    <a ui-sref='todo'>
+        Todo
+    </a>
+
+
+    <div class='ui-view'>
+    </div>
+
+    <div ui-view='scientific'>
+    </div>
+
+
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="angular.router.js"></script>
+    <script type="text/javascript" src='script.js'></script>
+</body>
+</html>

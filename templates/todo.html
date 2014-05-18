@@ -1,0 +1,13 @@
+<div>
+    <h1>
+        Todo App
+    </h1>
+        <input type='text' ng-model='filterTodo' />
+        <br />
+        <ul>
+            <li ng-repeat='todo in todos | filter:filterTodo' ng-class='{true: "done"}[todo.status]'>
+                {{ todo.desc }}
+            </li>
+        </ul>
+        
+    </div>
